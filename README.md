@@ -32,13 +32,13 @@ This image is already published in the [Docker Hub](https://hub.docker.com/r/cbe
 ### 2.1 Pull the image from the hub:
 
 ```
-$ docker pull cbelda/nginx4angular
+$ docker pull cbelda/nginx4angular:1.0
 ```
 
 ### 2.2 Run the Docker container:
 
 ```
-$ docker run -it -d -p 80:80 --name=mynginx4angular cbelda/nginx4angular
+$ docker run -it -d -p 80:80 --name=mynginx4angular cbelda/nginx4angular:1.0
 ```
 
 ### 2.3 Make the nginx container serve your app by copying the `dist/` content in the `html/` nginx directory:
